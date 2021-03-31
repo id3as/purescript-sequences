@@ -58,7 +58,7 @@ import Partial.Unsafe (unsafePartial)
 import Data.FingerTree.Digit (Digit, initDigit, headDigit, tailDigit,
   lastDigit, mkDigit, mkDigit1, mkDigit2, mkDigit3, mkDigitMay, runDigit,
   digitLength, snocDigit, consDigit)
-import Data.FingerTree.Digit as Digit
+import Data.FingerTree.Digit (Digit, consDigit, digitLength, dropDigit, headDigit, initDigit, lastDigit, mkDigit, mkDigit1, mkDigit2, mkDigit3, mkDigitMay, runDigit, snocDigit, tailDigit, unsafeIndex, (!)) as Digit
 import Data.Sequence.Internal (class Measured, (<$$$>), measure)
 
 data Node v a = Node2 v a a | Node3 v a a a
